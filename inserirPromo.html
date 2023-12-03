@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>ADM</title>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/variable.css">
+    <link rel="icon" href="/src/img/IcoNeri.ico" type="imagen/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/inserirPromo.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <img class="menu-logo" src="/src/img/logoPrincipal.svg" alt="Logo Neri Promos">
+            <div class="menu-social">
+                <img src="/src/img/instagram.png" alt="instagram">
+                <img src="/src/img/whatszapp.png" alt="whatsapp">
+                <img src="/src/img/telegram.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="conteiner">
+            <form id="notLoad">
+                <h1 class="title">Inserir uma nova promoção</h1>
+                <input class="input-produto" id="titulo-produto" required placeholder="Titulo do produto">
+                <input class="input-produto" id="link-produto"  placeholder="Link do produto">
+                <div>
+                    <input type="text" id="preco" required placeholder="Preço promo">
+                    <input type="text" id="price_Previous" required placeholder="Preço anterior">
+                    <select id="lojas" required>
+                        <option value="" disabled selected hidden>Loja parceiras</option>
+                        <option value="amazon">Amazon</option>
+                        <option value="magazine">Magazine Luiza</option>
+                        <option value="mercadolivre">Mercado Livre</option>
+                        <option value="nike">Nike</option>
+                        <option value="kabum">Kabum</option>
+                        <option value="terabyte">Terabyte</option>
+                        <option value="shopee">Shopee</option>
+                        <option value="aliexpress">Aliexpress</option>
+                        <option value="dafiti">Dafiti</option>
+                        <option value="renner">Renner</option>
+                        <option value="kanui">Kanui</option>
+                        <option value="xiaomi">Xiaomi</option>
+                        <option value="polishop">Polishop</option>
+                        <option value="mobly">Mobly</option>
+                        <option value="decathlon">Decathlon</option>
+                        <option value="lenovo">Lenovo</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="categoria" required>
+                        <option value="#" disabled selected hidden>Categorias</option>
+                        <option value="informatica">Informática</option>
+                        <option value="petshop">Petshop</option>
+                        <option value="papelaria">Papelaria</option>
+                        <option value="moda">Moda</option>
+                        <option value="casa">Casa</option>
+                        <option value="esportes">Esportes</option>
+                        <option value="infantil">Infantil</option>
+                        <option value="celular">Celular</option>
+                        <option value="beleza">Beleza</option>
+                        <option value="automotivo">Automotivo</option>
+                        <option value="mercado">Mercado</option>
+                        <option value="tv/video">TV/Video</option>
+                        <option value="cozinha">Cozinha</option>
+                        <option value="games">Games</option>
+                    </select>
+                    <div class="file-input-container">
+                        <label for="file-input" class="file-input-label" >
+                          Selecionar imagem
+                        </label>
+                        <input type="file" id="file-input" name="imagem" accept="image/*" required>
+                    </div>
+                </div>
+                <div id="div-description">
+                    <label for="description">Descrição:</label>
+                    <textarea name="description" id="description" required style="width: 100%;">
+
+                    </textarea>
+                </div>
+                <button class="btn inserirPromo" id="armazenar">Postar nova Promoção</button>
+            </form>
+            <form>
+                <button class="btn excluirPromo" onclick="showDelete()">Excluir ultima Promoção</button>
+            </form>
+        </div>
+    </main>
+    <div id="filter-delete">
+        <div>
+            <button onclick="hideDelete()" class="exit">
+                <img src="/src/img/exit.svg" alt="fechar-popup">
+            </button>
+            <form id="FormDelete">
+                <h1 class="Title">Excluir Promoção</h1>
+                <p>Digite o ID da promoção</p>
+                <input type="text" id="productId" name="productId">
+                <div>
+                    <button id="deleteBtn" type="button">Deletar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../dist/bundle.js"></script>
+    <script src="../src/js/popup.js"></script>
+    
+</body>
+</html>

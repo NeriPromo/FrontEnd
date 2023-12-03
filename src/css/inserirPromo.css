@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Liberation+Sans");
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23.5px;
+  align-items: center;
+}
+
+.conteiner {
+  width: 500px;
+  margin: 100px auto;
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 40px 18px;
+  
+}
+.conteiner > form {
+  display: flex;
+  flex-direction: column;
+
+}
+.title {
+  font-family: "Liberation sans", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  line-height: 23px;
+  color: black;
+  margin-bottom: 22px;
+}
+.input-produto {
+  height: 37px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  margin: 0 auto;
+  margin-bottom: 22px;
+  text-align: center; /* Centraliza horizontalmente o texto */
+  vertical-align: middle;
+}
+.input-produto::placeholder {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.13131999969482422px;
+  padding-top: 3px;
+  text-align: center;
+  color: rgba(146, 140, 140, 1);
+}
+form > div {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-around;
+}
+
+div > #preco {
+  height: 36px;
+  width: 30%;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(146, 140, 140, 1)
+}
+
+div > #price_Previous {
+  height: 36px;
+  width: 30%;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(146, 140, 140, 1)
+}
+
+div > #lojas {
+  width: 30%;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(146, 140, 140, 1);
+}
+
+#lojas::placeholder {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.13131999969482422px;
+  padding-top: 3px;
+  color: rgba(146, 140, 140, 1);
+}
+div > #categoria {
+  height: 36px;
+  width: 30%;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(146, 140, 140, 1);
+}
+.div-categora-file{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.file-input-container {
+  position: relative;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(146, 140, 140, 1);
+  box-sizing: border-box;
+}
+
+#file-input {
+  position: absolute;
+  left: -9999px;
+}
+#div-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#div-description > label{
+  position: absolute;
+  top: -2px;
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgba(146, 140, 140, 1)
+
+
+}
+
+#description{
+  box-sizing: border-box;
+  width: 297px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(146, 140, 140, 1)
+}
+
+
+.btn {
+  width: 297px;
+  height: 47px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.btn:hover {
+  box-shadow: 0px 5px 20px 0px rgba(51, 51, 51, 0.2);
+  transition: all 0.5s;
+}
+
+.inserirPromo {
+  background-color: rgba(51, 234, 102, 1);
+  color: rgba(74, 74, 74, 1);
+}
+
+.excluirPromo {
+  background-color: rgba(246, 69, 69, 1);
+  color: rgba(74, 74, 74, 1);
+}
+
+/*POPUP ABOUT*/
+#filter-delete > div {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 260px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  z-index: 9999;
+}
+#filter-delete {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    116,
+    116,
+    116,
+    0.507
+  ); /* Cor de fundo semi-transparente */
+  z-index: 9998; /* Coloque um valor menor do que o z-index do popup */
+}
+
+.exit {
+  position: absolute;
+  left: 205px;
+  top: 5px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+div > #FormDelete{
+  width: 100%;
+  height: 200px;
+  margin-top: 15%;
+  text-align: center;
+}
+
+#FormDelete > h1 {
+  font-family: "Liberation sans", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+#FormDelete > p{
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+#FormDelete > input {
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(146, 140, 140, 0.5);
+  margin: 0 auto;
+  margin-bottom: 22px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#FormDelete > div > button {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(246, 69, 69, 1);
+  color: rgba(74, 74, 74, 1);
+}
+#FormDelete > div > button:hover{
+  transition: 0.4s;
+  box-shadow: 0px 5px 20px 0px rgba(51, 51, 51, 0.3);
+}
+
+

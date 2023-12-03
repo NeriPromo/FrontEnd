@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/variable.css">
+    <link rel="icon" href="/src/img/IcoNeri.ico" type="imagen/x-icon">
+    <link href=" https://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet">
+    <script src="/src/js/inserirPromo.js"></script>
+    <script src="/src/js/insertPromotion.js"></script>
+
+
+    <title>Neri Promos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">
+                <img class="menu-logo" src="/src/img/logoPrincipal.svg" alt="Logo Neri Promos">
+            </a>
+            <form class="menu-form" onsubmit="event.preventDefault(); filterPromo('.menu-form > .menu-input')">
+                <input class="menu-input" type="text" placeholder="Busque sua promoção">
+                <button type="submit">
+                    <img src="/src/img/lupa.png" alt="">
+                </button>
+            </form>
+            <div class="menu-social">
+                <a class="link" href="https://www.instagram.com/neripromos/">
+                    <img src="/src/img/instagram.png" alt="instagram">
+                </a>
+                <a class="link" href="https://chat.whatsapp.com/HRlPtza7ycJJpo71mTyUMr">
+                    <img src="/src/img/whatszapp.png" alt="whatsapp">
+                </a>
+                <a class="link" href="https://t.me/neripromos">
+                    <img src="/src/img/telegram.png" alt="">
+                </a>
+            </div>
+            <button class="menu-search_mobile" onclick="showMenu('menu-search-mobile')">
+                <img src="/src/img/lupa.png" alt="">
+            </button>
+            <button class="menu-humburgue" onclick="showMenu('menu-mobile')">
+                <img src="/src/img/menu.svg" alt="">
+            </button>
+        </nav>
+        <div id="categoryFilter" onclick="categoryFilter()">
+            <button class="btnCategory">
+                <img src="/src/img/seta.svg" alt="">
+                Busque Categorias
+                <img src="/src/img/menuCategory.svg" alt="">
+            </button>
+        </div>
+        <div id="categoryMenu">
+            <h3>Todas as categorias</h3>
+            <section id="sectionUl">
+                <ul>
+                    <li>
+                       <a href="" value="informatica" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Informatica</a>
+                    </li>
+                    <li>
+                        <a href="" value="petshop" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Petshop</a>
+                    </li>
+                    <li>
+                        <a href="" value="papelaria" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Papelaria</a>
+                    </li>
+                    <li>
+                        <a href="" value="moda" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Moda</a>
+                    </li>
+                    <li>
+                        <a href="" value="casa" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Casa</a>
+                    </li>
+                    <li>
+                        <a href="" value="esportes" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="" value="infantil" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Infantil</a>
+                    </li>
+                    <li>
+                        <a href="" value="celular" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Celular</a>
+                    </li>
+                    <li>
+                        <a href="" value="beleza" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Beleza</a>
+                    </li>
+                    <li>
+                        <a href="" value="automotivo" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Automotivo</a>
+                    </li>
+                    <li>
+                        <a href="" value="mercado" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Mercado</a>
+                    </li>
+                    <li>
+                        <a href="" value="tv/video" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">TV / Vídeo</a>
+                    </li>
+                    <li>
+                        <a href="" value="cozinha" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Cozinha</a>
+                    </li>
+                    <li>
+                        <a href="" value="games" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Games</a>
+                    </li>
+                </ul>
+                <section id="sectionImg">
+                    <a href="">
+                        <img src="/src/img/imgMenu1.jpg" width="120px" value="informatica" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">
+                    </a>
+                    <a href="">
+                        <img src="/src/img/imgMenu2.jpg" width="120px" height="110px" value="mercado" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">
+                    </a>
+                    <a href="">
+                        <img src="/src/img/imgMenu3.jpg" width="120px" value="cozinha" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">
+                    </a>
+                    <a href="">
+                        <img src="/src/img/imgMenu4.jpg" width="120px" value="casa" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">
+                    </a>
+                </section>
+            </section>
+        </div>
+        <nav id="menu-search-mobile">
+            <div>
+                <h2>Buscar</h2>
+                <button onclick="hideMenu('menu-search-mobile')" class="exit">
+                    <img src="/src/img/exit.svg" alt="fechar-popup">
+                </button>
+                
+            </div>
+            <form class="menu-form" onsubmit="event.preventDefault(); filterPromo('#menu-search-mobile > .menu-form > .menu-input'); hideMenu()">
+                <input class="menu-input" type="text" placeholder="Busque sua promoção">
+                <button type="submit">
+                    <img src="/src/img/lupa.png" alt="">
+                </button>
+            </form>
+        </nav>
+        <nav id="menu-mobile">
+            <div>
+                <img src="/src/img/logoPrincipal.svg" alt="">
+                <button onclick="hideMenu('menu-mobile')" class="exit">
+                    <img src="/src/img/exit.svg" alt="fechar-popup">
+                </button>
+                <section >
+                    <ul>
+                        <li>
+                           <a href="" value="informatica" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Informatica</a>
+                        </li>
+                        <li>
+                            <a href="" value="petshop" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Petshop</a>
+                        </li>
+                        <li>
+                            <a href="" value="papelaria" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Papelaria</a>
+                        </li>
+                        <li>
+                            <a href="" value="moda" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Moda</a>
+                        </li>
+                        <li>
+                            <a href="" value="casa" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Casa</a>
+                        </li>
+                        <li>
+                            <a href="" value="esportes" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Esportes</a>
+                        </li>
+                        <li>
+                            <a href="" value="infantil" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Infantil</a>
+                        </li>
+                        <li>
+                            <a href="" value="celular" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Celular</a>
+                        </li>
+                        <li>
+                            <a href="" value="beleza" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Beleza</a>
+                        </li>
+                        <li>
+                            <a href="" value="automotivo" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Automotivo</a>
+                        </li>
+                        <li>
+                            <a href="" value="mercado" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Mercado</a>
+                        </li>
+                        <li>
+                            <a href="" value="tv/video" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">TV / Vídeo</a>
+                        </li>
+                        <li>
+                            <a href="" value="cozinha" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Cozinha</a>
+                        </li>
+                        <li>
+                            <a href="" value="games" onclick="event.preventDefault(); filterCategory(this.getAttribute('value'))">Games</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </nav>
+    </header>
+    <div id="filter-popup">
+        <div id="popup-about">
+            <button onclick="hidePopup()" class="exit">
+                <img src="/src/img/exit.svg" alt="fechar-popup">
+            </button>
+            <h1>Entenda como funciona a Neri Promos</h1>
+            <div class="about">
+                <div>
+                    <img src="/src/img/NeriPromo.svg" alt="" srcset="">
+                    <h1>Sobre a NeriPromos</h1>
+                    <p>Monitoramos, selecionamos e divulgamos as melhores
+                        promoções de lojas online do Brasil. Uma mina para quem quer
+                        economizar! As melhores promoções em um só lugar.</p>
+                </div>
+                <div>
+                    <img src="/src/img/escudo.svg" alt="" srcset="">
+                    <h1>Somente lojas confiáveis</h1>
+                    <p>Magazine Luiza, Amazon, Casas Bahia, Americanas, Shopee
+                        Centauro, Mercado Livre, Submarino, Extra, Ponto Frio, Boticário
+                        Natura e muito mais.</p>
+                </div>
+                <div>
+                    <img src="/src/img/cadeado.svg" alt="" srcset="">
+                    <h1>A segurança do site</h1>
+                    <p>Todas as lojas são verificadas por nossa equipe para garantir a
+                        confiabilidade da compra em nosso site.</p>
+                </div>
+                <div>
+                    <img src="/src/img/A-Z.svg" alt="" srcset="">
+                    <h1>Produtos de A a Z</h1>
+                    <p>Exploramos o melhor que a internet tem a oferecer.
+                        Compartilhamos tudo o que encontramos. Você encontrará
+                        diversos produtos, mas nosso foco são produtos para a sua casa.</p>
+                </div>
+                <p>Já somos mais de milhões de pessoas em nossas redes sociais. Você nos encontra no Instagram, Whatsapp
+                    e Telegram.</p>
+            </div>
+
+        </div>
+    </div>
+    <main id="container">
+        <div class="about">
+            <h1>Como funciona a</h1>
+            <img src="/src/img/logoPrincipal.svg" alt="">
+            <p>As melhores promoções em um só lugar</p>
+            <a href="#" onclick="showPopup()">Ver mais</a>
+        </div>
+        <form class="list-order-produts">
+            <label for="order" id="label-order">Ordenar por</label>
+            <select id="list-itens" onchange="filterProduct()">
+                <option value="ultimasPromocoes">Ultimas promoções postadas</option>
+                <option value="promocoesAntigas">Promoções mais antigas</option>
+                <option value="melhoresPrecos">Melhores preços</option>
+            </select>
+        </form>
+        <section id="list-produts">
+        </section>
+    </main>
+    <footer>
+        <section class="sec-footer-1">
+            <div>
+                <h1>De A a Z</h1>
+                <p>Encontre uma variedade de produtos</p>
+            </div>
+            <div>
+                <h1>PROMOS</h1>
+                <p>Todos os dias promoções são divulgadas</p>
+            </div>
+        </section>
+        <section class="sec-footer-2">
+            <img src="/src/img/magalu.png" alt="logo-magalu">
+            <img src="/src/img/nike.png" width="200px" height="100px" alt="logo-nike">
+            <img src="/src/img/Casas_Bahia.png" alt="logo-casas Bahia">
+            <img src="/src/img/amazon2.png" alt="logo-amazon">
+        </section>
+        <section class="sec-footer-3">
+            <div>
+                <img src="/src/img/logoPrincipal.svg" alt="logo-magalu">
+                <p>A NeriPromos é uma empresa digital que monitora, seleciona e divulga as melhores promoções de lojas
+                    online do Brasil.</p>
+            </div>
+            <div>
+                <div class="menu-social">
+                    <h1>Siga nossas Redes Sociais!</h1>
+                    <a class="link" href="https://www.instagram.com/neripromos/">
+                        <img src="/src/img/instagram.png" alt="instagram">
+                    </a>
+                    <a class="link" href="https://chat.whatsapp.com/HRlPtza7ycJJpo71mTyUMr">
+                        <img src="/src/img/whatszapp.png" alt="whatsapp">
+                    </a>
+                    <a class="link" href="https://t.me/neripromos">
+                        <img src="/src/img/telegram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sec-footer-4">
+            <div>
+                <h1>Descontos por categorias</h1>
+                <p>Informática</p>
+                <p>Petshop</p>
+                <p>Papelaria</p>
+                <p>Moda</p>
+                <p>Casa</p>
+            </div>
+            <div>
+                <h1>Descontos por categorias</h1>
+                <p>Esportes</p>
+                <p>Infantil</p>
+                <p>Celular</p>
+                <p>Beleza</p>
+            </div>
+            <div>
+                <h1>Descontos por categorias</h1>
+                <p>Automotivo</p>
+                <p>Mercado</p>
+                <p>TV / Vídeo</p>
+                <p>Cozinha</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/src/js/popup.js"></script>    
+</body>
+
+</html>
