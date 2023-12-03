@@ -35,66 +35,98 @@ function loadPromotions() {
           case "amazon":
             partner_store.src = "/src/img/amazon.png";
             partner_store.setAttribute("alt", "loja amazon")
+            partner_store.setAttribute("width", "150px")
+            partner_store.setAttribute("height", "30px")
             break;
           case "kabum":
             partner_store.src = "/src/img/kabum.svg";
             partner_store.setAttribute("alt", "loja kabum")
+            partner_store.setAttribute("width", "80px")
+            partner_store.setAttribute("height", "40px")
             break;
           case "nike":
             partner_store.src = "/src/img/nike.svg";
             partner_store.setAttribute("alt", "loja nike")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "mercadolivre":
             partner_store.src = "/src/img/meli.svg";
             partner_store.setAttribute("alt", "loja mercado livre")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "magazine":
             partner_store.src = "/src/img/magalu.svg";
             partner_store.setAttribute("alt", "loja magazine luiza")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "terabyte":
             partner_store.src = "/src/img/terabyte.svg";
             partner_store.setAttribute("alt", "loja terabyte")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "shopee":
             partner_store.src = "/src/img/shopee.svg";
             partner_store.setAttribute("alt", "loja shopee")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "aliexpress":
             partner_store.src = "/src/img/aliexpress.svg";
             partner_store.setAttribute("alt", "loja aliexpress")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "dafiti":
             partner_store.src = "/src/img/dafiti.svg";
             partner_store.setAttribute("alt", "loja dafiti")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "renner":
             partner_store.src = "/src/img/renner.svg";
             partner_store.setAttribute("alt", "loja renner")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "kanui":
             partner_store.src = "/src/img/kanui.svg";
             partner_store.setAttribute("alt", "loja kanui")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "xiaomi":
             partner_store.src = "/src/img/xiaomi.svg";
             partner_store.setAttribute("alt", "loja xiaomi")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "polishop":
             partner_store.src = "/src/img/polishop.svg";
             partner_store.setAttribute("alt", "loja polishop")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "mobly":
             partner_store.src = "/src/img/mobly.svg";
             partner_store.setAttribute("alt", "loja mobly")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "decathlon":
             partner_store.src = "/src/img/decathlon.svg";
             partner_store.setAttribute("alt", "loja decathlon")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
           case "lenovo":
             partner_store.src = "/src/img/lenovo.svg";
             partner_store.setAttribute("alt", "loja lenovo")
+            partner_store.setAttribute("width", "100px")
+            partner_store.setAttribute("height", "100px")
             break;
         }
 
