@@ -32,7 +32,7 @@
                 <img class="menu-logo" src="/src/img/logoPrincipal.svg" alt="Logo Neri Promos">
             </a>
             <form class="menu-form" onsubmit="event.preventDefault(); filterPromo('.menu-form > .menu-input')">
-                <input class="menu-input" type="text" placeholder="Busque sua promoção" aria-label="Pesquisar">
+                <input class="menu-input" name="menu-input" type="text" placeholder="Busque sua promoção" aria-label="Pesquisar">
                 <button type="submit" role="button">
                     <img src="/src/img/lupa.png" alt="Buscar">
                 </button>
@@ -134,7 +134,7 @@
                 
             </div>
             <form class="menu-form" onsubmit="event.preventDefault(); filterPromo('#menu-search-mobile > .menu-form > .menu-input'); hideMenu()">
-                <input class="menu-input" type="text" placeholder="Busque sua promoção" aria-label="Pesquisar">
+                <input class="menu-input" name="menu-input" type="text" placeholder="Busque sua promoção" aria-label="Pesquisar">
                 <button type="submit" role="button">
                     <img src="/src/img/lupa.png" alt="buscar">
                 </button>
@@ -243,7 +243,7 @@
             <a href="#" aria-label="ver mais" onclick="showPopup()" aria-haspopup>Ver mais</a>
         </div>
         <form class="list-order-produts">
-            <label for="order" id="label-order">Ordenar por</label>
+            <label for="list-itens" id="label-order">Ordenar por</label>
             <select id="list-itens" onchange="filterProduct()">
                 <option value="ultimasPromocoes">Ultimas promoções postadas</option>
                 <option value="promocoesAntigas">Promoções mais antigas</option>

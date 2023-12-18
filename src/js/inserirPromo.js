@@ -141,6 +141,7 @@ function loadPromotions() {
         const itensImg = document.createElement("img");
         itensImg.classList.add("itens-img");
         itensImg.src = product.image;
+        itensImg.alt = "Foto do produto"
 
         containerImg.append(itensImg);
 
