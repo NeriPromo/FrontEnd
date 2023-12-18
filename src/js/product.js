@@ -5,9 +5,17 @@ function loadProduct() {
     fetch(`${API_URL}/products/${id}`)
       .then(response => response.json())
       .then(productData => {
+
+        const main = document.getElementById('main')
   
-        const container = document.getElementById('container');
-  
+        const container = document.createElement('section');
+        container.setAttribute('id', 'container')
+
+        const details = document.createElement('section')
+        details.setAttribute('id', 'details')
+
+        main.append(container, details)
+
         const product = document.createElement('div');
         product.classList.add('product-img');
   
@@ -119,8 +127,6 @@ function loadProduct() {
         productInfo.append(productTitle, productPricePrevious, productPrice, button, productWarning);
   
         container.append(product, productInfo, productShare);
-
-        const details = document.getElementById('details')
 
         const textDetails = document.createElement('p')
         textDetails.textContent = productData.data[0].description
