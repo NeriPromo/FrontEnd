@@ -421,6 +421,13 @@ footer {
   margin-top: 45px;
   color: #707070;
 }
+
+ #about-footer {
+    margin: 0 auto;
+    color: #fa1a0c;
+    padding-top: 25px;
+  }
+
 .about > div h1 {
   font-family: "Roboto";
   font-size: 24px;
@@ -776,11 +783,12 @@ footer {
     text-align: start;
   }
   .about p {
-    color: #fa1a0c;
-    font-weight: 400;
+    color: #000000;
+    font-weight: 500;
     margin-top: 15px;
     margin-bottom: 20px;
   }
+
   .about a {
     text-decoration: none;
     color: inherit;
