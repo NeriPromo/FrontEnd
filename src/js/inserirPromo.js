@@ -33,7 +33,7 @@ function loadPromotions() {
         partner_store.classList.add("partner_store");
         switch (product.partner_store) {
           case "amazon":
-            partner_store.src = "src/img/magalu.svg";
+            partner_store.src = "src/img/amazon.svg";
             partner_store.setAttribute("alt", "loja amazon")
             partner_store.setAttribute("width", "100px")
             partner_store.setAttribute("height", "100px")
