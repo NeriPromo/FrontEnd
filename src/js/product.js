@@ -64,52 +64,17 @@ function loadProduct() {
         partnerImg.src = "/src/img/amazon2.png"
         switch (productData.data[0].partner_store) {
           case "amazon":
-            partnerImg.src = "/src/img/amazon.png";
-            break;
-          case "kabum":
-            partnerImg.src = "/src/img/kabum.svg";
-            break;
-          case "nike":
-            partnerImg.src = "/src/img/nike.svg";
+            partnerImg.src = "/src/img/amazon.svg";
             break;
           case "mercadolivre":
             partnerImg.src = "/src/img/meli.svg";
             break;
           case "magazine":
-            partnerImg.src = "/src/img/magalu.svg";
-            break;
-          case "terabyte":
-            partnerImg.src = "/src/img/terabyte.svg";
-            break;
           case "shopee":
             partnerImg.src = "/src/img/shopee.svg";
             break;
           case "aliexpress":
             partnerImg.src = "/src/img/aliexpress.svg";
-            break;
-          case "dafiti":
-            partnerImg.src = "/src/img/dafiti.svg";
-            break;
-          case "renner":
-            partnerImg.src = "/src/img/renner.svg";
-            break;
-          case "kanui":
-            partnerImg.src = "/src/img/kanui.svg";
-            break;
-          case "xiaomi":
-            partnerImg.src = "/src/img/xiaomi.svg";
-            break;
-          case "polishop":
-            partnerImg.src = "/src/img/polishop.svg";
-            break;
-          case "mobly":
-            partnerImg.src = "/src/img/mobly.svg";
-            break;
-          case "decathlon":
-            partnerImg.src = "/src/img/decathlon.svg";
-            break;
-          case "lenovo":
-            partnerImg.src = "/src/img/lenovo.svg";
             break;
         }
 
