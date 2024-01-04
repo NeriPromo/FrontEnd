@@ -134,13 +134,7 @@ function loadLastProducts() {
         partner_store.classList.add("partner_store");
         switch (product.partner_store) {
           case "amazon":
-            partner_store.src = "/src/img/amazon.png";
-            break;
-          case "kabum":
-            partner_store.src = "/src/img/kabum.svg";
-            break;
-          case "nike":
-            partner_store.src = "/src/img/nike.svg";
+            partner_store.src = "/src/img/amazon.svg";
             break;
           case "mercadolivre":
             partner_store.src = "/src/img/meli.svg";
@@ -148,41 +142,13 @@ function loadLastProducts() {
           case "magazine":
             partner_store.src = "/src/img/magalu.svg";
             break;
-          case "terabyte":
-            partner_store.src = "/src/img/terabyte.svg";
-            break;
           case "shopee":
             partner_store.src = "/src/img/shopee.svg";
             break;
           case "aliexpress":
             partner_store.src = "/src/img/aliexpress.svg";
             break;
-          case "dafiti":
-            partner_store.src = "/src/img/dafiti.svg";
-            break;
-          case "renner":
-            partner_store.src = "/src/img/renner.svg";
-            break;
-          case "kanui":
-            partner_store.src = "/src/img/kanui.svg";
-            break;
-          case "xiaomi":
-            partner_store.src = "/src/img/xiaomi.svg";
-            break;
-          case "polishop":
-            partner_store.src = "/src/img/polishop.svg";
-            break;
-          case "mobly":
-            partner_store.src = "/src/img/mobly.svg";
-            break;
-          case "decathlon":
-            partner_store.src = "/src/img/decathlon.svg";
-            break;
-          case "lenovo":
-            partner_store.src = "/src/img/lenovo.svg";
-            break;
         }
-
         produtsItens.append(
           containerImg,
           itensTitle,
@@ -235,13 +201,7 @@ function loadOlderPromo() {
         partner_store.classList.add("partner_store");
         switch (product.partner_store) {
           case "amazon":
-            partner_store.src = "/src/img/amazon.png";
-            break;
-          case "kabum":
-            partner_store.src = "/src/img/kabum.svg";
-            break;
-          case "nike":
-            partner_store.src = "/src/img/nike.svg";
+            partner_store.src = "/src/img/amazon.svg";
             break;
           case "mercadolivre":
             partner_store.src = "/src/img/meli.svg";
@@ -249,41 +209,13 @@ function loadOlderPromo() {
           case "magazine":
             partner_store.src = "/src/img/magalu.svg";
             break;
-          case "terabyte":
-            partner_store.src = "/src/img/terabyte.svg";
-            break;
           case "shopee":
             partner_store.src = "/src/img/shopee.svg";
             break;
           case "aliexpress":
             partner_store.src = "/src/img/aliexpress.svg";
             break;
-          case "dafiti":
-            partner_store.src = "/src/img/dafiti.svg";
-            break;
-          case "renner":
-            partner_store.src = "/src/img/renner.svg";
-            break;
-          case "kanui":
-            partner_store.src = "/src/img/kanui.svg";
-            break;
-          case "xiaomi":
-            partner_store.src = "/src/img/xiaomi.svg";
-            break;
-          case "polishop":
-            partner_store.src = "/src/img/polishop.svg";
-            break;
-          case "mobly":
-            partner_store.src = "/src/img/mobly.svg";
-            break;
-          case "decathlon":
-            partner_store.src = "/src/img/decathlon.svg";
-            break;
-          case "lenovo":
-            partner_store.src = "/src/img/lenovo.svg";
-            break;
         }
-
         produtsItens.append(
           containerImg,
           itensTitle,
@@ -336,13 +268,7 @@ function loadBestPrice() {
         partner_store.classList.add("partner_store");
         switch (product.partner_store) {
           case "amazon":
-            partner_store.src = "/src/img/amazon.png";
-            break;
-          case "kabum":
-            partner_store.src = "/src/img/kabum.svg";
-            break;
-          case "nike":
-            partner_store.src = "/src/img/nike.svg";
+            partner_store.src = "/src/img/amazon.svg";
             break;
           case "mercadolivre":
             partner_store.src = "/src/img/meli.svg";
@@ -350,38 +276,11 @@ function loadBestPrice() {
           case "magazine":
             partner_store.src = "/src/img/magalu.svg";
             break;
-          case "terabyte":
-            partner_store.src = "/src/img/terabyte.svg";
-            break;
           case "shopee":
             partner_store.src = "/src/img/shopee.svg";
             break;
           case "aliexpress":
             partner_store.src = "/src/img/aliexpress.svg";
-            break;
-          case "dafiti":
-            partner_store.src = "/src/img/dafiti.svg";
-            break;
-          case "renner":
-            partner_store.src = "/src/img/renner.svg";
-            break;
-          case "kanui":
-            partner_store.src = "/src/img/kanui.svg";
-            break;
-          case "xiaomi":
-            partner_store.src = "/src/img/xiaomi.svg";
-            break;
-          case "polishop":
-            partner_store.src = "/src/img/polishop.svg";
-            break;
-          case "mobly":
-            partner_store.src = "/src/img/mobly.svg";
-            break;
-          case "decathlon":
-            partner_store.src = "/src/img/decathlon.svg";
-            break;
-          case "lenovo":
-            partner_store.src = "/src/img/lenovo.svg";
             break;
         }
 
@@ -450,13 +349,7 @@ function filterPromo(inputSelector) {
           partner_store.classList.add("partner_store");
           switch (product.partner_store) {
             case "amazon":
-              partner_store.src = "/src/img/amazon.png";
-              break;
-            case "kabum":
-              partner_store.src = "/src/img/kabum.svg";
-              break;
-            case "nike":
-              partner_store.src = "/src/img/nike.svg";
+              partner_store.src = "/src/img/amazon.svg";
               break;
             case "mercadolivre":
               partner_store.src = "/src/img/meli.svg";
@@ -464,38 +357,11 @@ function filterPromo(inputSelector) {
             case "magazine":
               partner_store.src = "/src/img/magalu.svg";
               break;
-            case "terabyte":
-              partner_store.src = "/src/img/terabyte.svg";
-              break;
             case "shopee":
               partner_store.src = "/src/img/shopee.svg";
               break;
             case "aliexpress":
               partner_store.src = "/src/img/aliexpress.svg";
-              break;
-            case "dafiti":
-              partner_store.src = "/src/img/dafiti.svg";
-              break;
-            case "renner":
-              partner_store.src = "/src/img/renner.svg";
-              break;
-            case "kanui":
-              partner_store.src = "/src/img/kanui.svg";
-              break;
-            case "xiaomi":
-              partner_store.src = "/src/img/xiaomi.svg";
-              break;
-            case "polishop":
-              partner_store.src = "/src/img/polishop.svg";
-              break;
-            case "mobly":
-              partner_store.src = "/src/img/mobly.svg";
-              break;
-            case "decathlon":
-              partner_store.src = "/src/img/decathlon.svg";
-              break;
-            case "lenovo":
-              partner_store.src = "/src/img/lenovo.svg";
               break;
           }
 
@@ -568,13 +434,7 @@ function filterCategory(category) {
           partner_store.classList.add("partner_store");
           switch (product.partner_store) {
             case "amazon":
-              partner_store.src = "/src/img/amazon.png";
-              break;
-            case "kabum":
-              partner_store.src = "/src/img/kabum.svg";
-              break;
-            case "nike":
-              partner_store.src = "/src/img/nike.svg";
+              partner_store.src = "/src/img/amazon.svg";
               break;
             case "mercadolivre":
               partner_store.src = "/src/img/meli.svg";
@@ -582,38 +442,11 @@ function filterCategory(category) {
             case "magazine":
               partner_store.src = "/src/img/magalu.svg";
               break;
-            case "terabyte":
-              partner_store.src = "/src/img/terabyte.svg";
-              break;
             case "shopee":
               partner_store.src = "/src/img/shopee.svg";
               break;
             case "aliexpress":
               partner_store.src = "/src/img/aliexpress.svg";
-              break;
-            case "dafiti":
-              partner_store.src = "/src/img/dafiti.svg";
-              break;
-            case "renner":
-              partner_store.src = "/src/img/renner.svg";
-              break;
-            case "kanui":
-              partner_store.src = "/src/img/kanui.svg";
-              break;
-            case "xiaomi":
-              partner_store.src = "/src/img/xiaomi.svg";
-              break;
-            case "polishop":
-              partner_store.src = "/src/img/polishop.svg";
-              break;
-            case "mobly":
-              partner_store.src = "/src/img/mobly.svg";
-              break;
-            case "decathlon":
-              partner_store.src = "/src/img/decathlon.svg";
-              break;
-            case "lenovo":
-              partner_store.src = "/src/img/lenovo.svg";
               break;
           }
 
