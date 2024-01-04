@@ -70,6 +70,8 @@ function loadProduct() {
             partnerImg.src = "/src/img/meli.svg";
             break;
           case "magazine":
+            partnerImg.src = "src/img/magalu.svg";
+            break;
           case "shopee":
             partnerImg.src = "/src/img/shopee.svg";
             break;
