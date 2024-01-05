@@ -41,11 +41,16 @@ function loadProduct() {
         const formattedPrice = parseFloat(productData.data[0].price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         productPrice.innerText = formattedPrice;
   
+        const link = document.createElement('a');
         const button = document.createElement('button');
-        const link = document.createElement('a')
-        link.innerHTML = "Ir a Loja";
         
-        link.setAttribute("href", productData.data[0].link)
+        button.innerHTML = "Ir a Loja";
+        
+        link.appendChild(button);
+        
+        link.setAttribute("href", productData.data[0].link);
+
+        document.body.appendChild(link);
 
         const productShare = document.createElement('div');
         productShare.classList.add('productShare');
@@ -83,15 +88,12 @@ function loadProduct() {
         partnerPromo.append(partnerText, partnerImg)
 
         productShare.append(buttonShare, partnerPromo)
-        
-
-        button.appendChild(link)
-        
+      
         const productWarning = document.createElement('p');
         productWarning.classList.add('product-info-warning');
         productWarning.innerText = 'O preço dos produtos podem variar de acordo com a disponibilidade da loja. As ofertas são por tempo limitado e determinado pelas lojas.';
   
-        productInfo.append(productTitle, productPricePrevious, productPrice, button, productWarning);
+        productInfo.append(productTitle, productPricePrevious, productPrice, link, productWarning);
   
         container.append(product, productInfo, productShare);
 
