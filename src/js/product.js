@@ -57,7 +57,30 @@ function loadProduct() {
 
         const buttonShare = document.createElement('button')
         buttonShare.textContent = "Compartilhar"
+        buttonShare.id = 'buttonShare'
 
+        const containerShare = document.createElement('div')
+        containerShare.classList.add('containerShare')
+        
+        const divShare = document.createElement('div')
+        divShare.classList.add('divShare')
+
+        const btnWhatsapp = document.createElement('a')
+        btnWhatsapp.setAttribute('href', 'whatsapp://send?text=' + productData.data[0].link)
+        btnWhatsapp.classList.add('socialShare')
+
+        const imgWhatsapp = document.createElement('img')
+        imgWhatsapp.src = 'src/img/whatsappIcon.png'
+        imgWhatsapp.classList.add('sizeIcon')
+        
+        const btnTelegram = document.createElement('a')
+        btnTelegram.setAttribute('href', 'https://t.me/share/url?url=' + productData.data[0].link)
+        btnTelegram.classList.add('socialShare')
+
+        const imgTelegram = document.createElement('img')
+        imgTelegram.src = 'src/img/telegramIcon.png'
+        imgTelegram.classList.add('sizeIcon')
+        
         const partnerPromo = document.createElement('div')
         partnerPromo.classList.add('partnerPromo')
 
@@ -86,13 +109,17 @@ function loadProduct() {
         }
 
         partnerPromo.append(partnerText, partnerImg)
-
-        productShare.append(buttonShare, partnerPromo)
-      
+        containerShare.append(buttonShare, divShare)
+        productShare.append(containerShare, partnerPromo)
         const productWarning = document.createElement('p');
         productWarning.classList.add('product-info-warning');
         productWarning.innerText = 'O preço dos produtos podem variar de acordo com a disponibilidade da loja. As ofertas são por tempo limitado e determinado pelas lojas.';
-  
+        
+        divShare.append(btnWhatsapp, btnTelegram)
+        btnWhatsapp.append(imgWhatsapp)
+        btnTelegram.append(imgTelegram)
+
+
         productInfo.append(productTitle, productPricePrevious, productPrice, link, productWarning);
   
         container.append(product, productInfo, productShare);
@@ -101,6 +128,15 @@ function loadProduct() {
         textDetails.textContent = productData.data[0].description
 
         details.appendChild(textDetails)
+
+        document.getElementById('buttonShare').addEventListener('click', function(){
+          console.log('foi')
+
+          const display = divShare.style.display;
+
+          divShare.style.display = (display === "none" || display === "") ? "flex" : "none";
+        })
+
       })
       .catch(error => {
         console.error('Erro ao carregar o produto:', error);
